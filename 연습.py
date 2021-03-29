@@ -1,4 +1,3 @@
-str1 = "내PC"
-str2 = "지키미"
+str1 = "내PC지키미2021"
 
-print((str1 + str2)*3)
+print(str1[-1])

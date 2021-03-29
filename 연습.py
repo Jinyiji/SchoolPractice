@@ -1,3 +1,4 @@
 str1 = "ABCDEFG"
 
-print(str1[1:4])
+if "ABC" in str1:
+    print("참")

@@ -3,9 +3,11 @@
 a = 613
 
 카운터 = 0
-while a:
-    if a % 10 in [3, 6, 9]:
+
+for num in range(1, a+1):
+while num:
+    if num % 10==3 or num%10==6 or num%10==9:
         카운터 += 1
-    a = a // 10
+    num = num // 10
 
 print(카운터)

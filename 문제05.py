@@ -4,7 +4,7 @@ def solution(number):
        current = i
        temp = count
        while current != 0:
-           if current
+           if current%10==3 or current%10==6 or current%10==9:
                count += 1
                print("pair", end = '') # 디버깅을 위한 출력(없어도 무관)
            current = current // 10
@@ -13,3 +13,4 @@ def solution(number):
 # 1부터 number까지 몇 번 박수를 쳐야 하는지 반환
 number = 40
 ret = solution(number)
+print(ret)

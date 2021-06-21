@@ -8,8 +8,8 @@ def solution(numbers):
     answer = list()
     # numbers[i]는 첫 번째로 뽑은 숫자
     # numbers[j]는 두 번째로 뽑은 숫자
-    for i in range(3):
-        for j in range(i+1, 4):
+    for i in range(len(numbers)-1):
+        for j in range(i+1, len(numbers)):
             # 두 수를 뽑아 더한 값이 기존에 존재하지 않을 때
             if(numbers[i] + numbers[j]) not in answer:
                 # list에 추가

@@ -10,10 +10,11 @@ def solution(numbers):
     # numbers[j]는 두 번째로 뽑은 숫자
     for i in range(len(numbers)-1):
         for j in range(i+1, len(numbers)):
+            value = numbers[i] + numbers[j]
             # 두 수를 뽑아 더한 값이 기존에 존재하지 않을 때
-            if(numbers[i] + numbers[j]) not in answer:
+            if value not in answer:
                 # list에 추가
-                answer.append(numbers[i] + numbers[j])
+                answer.append(value)
     # 오름차순으로 정렬
     answer.sort()
     return answer
